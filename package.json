@@ -1,32 +1,37 @@
 {
-  "name": "translate-js",
-  "version": "0.0.1",
-  "description": "Laragle Translate real-time support.",
-  "main": "build/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src -d ./lib",
-    "lint": "eslint ./src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/laragle/translate-js.git"
-  },
-  "keywords": [
-    "npm",
-    "node",
-    "javascript",
-    "Laragle Translate"
-  ],
-  "author": "Darwin Luague",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/laragle/translate-js/issues"
-  },
-  "homepage": "https://github.com/laragle/translate-js#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.6.1"
-  }
+    "name": "translate-js",
+    "version": "0.0.1",
+    "description": "Laragle Translate real-time support.",
+    "main": "build/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "babel ./src -d ./lib",
+        "lint": "eslint ./src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/laragle/translate-js.git"
+    },
+    "keywords": [
+        "npm",
+        "node",
+        "javascript",
+        "Laragle Translate"
+    ],
+    "author": "Darwin Luague",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/laragle/translate-js/issues"
+    },
+    "homepage": "https://github.com/laragle/translate-js#readme",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "eslint": "^5.6.1"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "laravel-echo": "^1.4.0",
+        "pusher-js": "^4.3.1"
+    }
 }
