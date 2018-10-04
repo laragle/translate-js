@@ -1,0 +1,25 @@
+{
+  "name": "translate-js",
+  "version": "0.0.1",
+  "description": "Laragle Translate real-time support.",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laragle/translate-js.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "javascript",
+    "Laragle Translate"
+  ],
+  "author": "Darwin Luague",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laragle/translate-js/issues"
+  },
+  "homepage": "https://github.com/laragle/translate-js#readme"
+}
