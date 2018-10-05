@@ -12,15 +12,24 @@ class Translate {
                     key: options.key,
                     cluster: 'mt1',
                     encrypted: true,
-                    //authEndpoint: 'http://api.lanslate.local/broadcasting/auth',
+                    authEndpoint: options.authEndpoint,
                     auth: { headers: { Authorization: "Bearer " + data } }
                 });
 
-                // echo.private('order.1')
-                //     .listen('OrderShipped', (e) => {
-                //         console.log('e.order.name');
-                //     });
+                echo.private(options.channel)
+                    .listen('TranslationUpdated', (e) => {
+                        axios.post('/laragle/translate/update', e);
+                    });
 
+                echo.private(options.channel)
+                    .listen('TranslationAdded', (e) => {
+                        axios.post('/laragle/translate/update', e);
+                    });
+
+                echo.private(options.channel)
+                    .listen('TranslationDeleted', (e) => {
+                        axios.delete('/laragle/translate/delete', e);
+                    });
             })
     }
 
