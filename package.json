@@ -1,12 +1,13 @@
 {
-    "name": "translate-js",
-    "version": "0.0.1",
+    "name": "laragle-translate-js",
+    "version": "0.0.2",
     "description": "Laragle Translate real-time support.",
-    "main": "build/index.js",
+    "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "babel ./src -d ./lib",
-        "lint": "eslint ./src"
+        "build": "babel ./src -d ./dist",
+        "lint": "eslint ./src",
+        "prepublishOnly": "npm run build"
     },
     "repository": {
         "type": "git",
