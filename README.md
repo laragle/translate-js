@@ -24,7 +24,7 @@ import Translate from 'laragle-translate-js';
 new Translate({
     key: 'b83ca2ed4a1a4e39b2b3',
     channel: 'APP_ID',
-    authEndpoint: 'https://translate.laragle.com/broadcasting/auth'
+    authEndpoint: 'https://api.translate.laragle.com/broadcasting/auth'
 });
 ```
 
