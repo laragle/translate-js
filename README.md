@@ -33,4 +33,4 @@ You can get your APP_ID by creating a project [here](https://translate.laragle.c
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
