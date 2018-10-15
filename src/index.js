@@ -6,7 +6,7 @@ window.Pusher = require('pusher-js');
 class Translate {
     constructor(options) {
         const http = axios.create({
-            baseURL: options.app_url
+            baseURL: options.appUrl
         })
 
         http.get('laragle/translate/token')
