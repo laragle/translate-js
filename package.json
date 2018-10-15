@@ -1,6 +1,6 @@
 {
     "name": "laragle-translate-js",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Laragle Translate real-time support.",
     "main": "dist/index.js",
     "scripts": {
