@@ -5,7 +5,11 @@ window.Pusher = require('pusher-js');
 
 class Translate {
     constructor(options) {
-        axios.get('/laragle/translate/token')
+        const http = axios.create({
+            baseURL: options.app_url
+        })
+
+        http.get('laragle/translate/token')
             .then(({ data }) => {
                 var echo = new Echo({
                     broadcaster: 'pusher',
@@ -18,17 +22,17 @@ class Translate {
 
                 echo.private(options.channel)
                     .listen('TranslationUpdated', (e) => {
-                        axios.post('/laragle/translate/update', e);
+                        http.post('laragle/translate/update', e);
                     });
 
                 echo.private(options.channel)
                     .listen('TranslationAdded', (e) => {
-                        axios.post('/laragle/translate/update', e);
+                        http.post('laragle/translate/update', e);
                     });
 
                 echo.private(options.channel)
                     .listen('TranslationDeleted', (e) => {
-                        axios.delete('/laragle/translate/delete', e);
+                        http.delete('laragle/translate/delete', e);
                     });
             })
     }
