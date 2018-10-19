@@ -1,6 +1,6 @@
 {
-    "name": "laragle-translate-js",
-    "version": "0.0.4",
+    "name": "laragle-translate",
+    "version": "0.0.1",
     "description": "Laragle Translate real-time support.",
     "main": "dist/index.js",
     "scripts": {
@@ -17,7 +17,10 @@
         "npm",
         "node",
         "javascript",
-        "Laragle Translate"
+        "laravel",
+        "localization",
+        "management",
+        "translation"
     ],
     "author": "Darwin Luague",
     "license": "MIT",
