@@ -7,13 +7,13 @@ Laragle Translate is a Laravel localization management system that will update y
 You can install the package via yarn:
 
 ```bash
-yarn add laragle-translate
+yarn add @laragle/translate
 ```
 
 or npm:
 
 ```bash
-npm install laragle-translate --save
+npm install @laragle/translate --save
 ```
 
 Lastly, add the following javascript code.
