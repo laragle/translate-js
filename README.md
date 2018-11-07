@@ -19,7 +19,7 @@ npm install @laragle/translate --save
 Lastly, add the following javascript code.
 
 ```js
-import Translate from 'laragle-translate';
+import Translate from '@laragle/translate';
 
 new Translate({
     key: 'b83ca2ed4a1a4e39b2b3',
