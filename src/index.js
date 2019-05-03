@@ -9,7 +9,7 @@ class Translate {
             baseURL: options.appUrl
         })
 
-        http.get('laragle/translate/token')
+        http.get('/laragle/translate/token')
             .then(({ data }) => {
                 var echo = new Echo({
                     broadcaster: 'pusher',
@@ -22,17 +22,17 @@ class Translate {
 
                 echo.private(options.channel)
                     .listen('TranslationUpdated', (e) => {
-                        http.post('laragle/translate/update', e);
+                        http.post('/laragle/translate/update', e);
                     });
 
                 echo.private(options.channel)
                     .listen('TranslationAdded', (e) => {
-                        http.post('laragle/translate/update', e);
+                        http.post('/laragle/translate/update', e);
                     });
 
                 echo.private(options.channel)
                     .listen('TranslationDeleted', (e) => {
-                        http.delete('laragle/translate/delete', e);
+                        http.delete('/laragle/translate/delete', e);
                     });
             })
     }
