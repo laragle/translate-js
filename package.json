@@ -1,6 +1,6 @@
 {
     "name": "@laragle/translate",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Laragle Translate real-time support.",
     "main": "dist/index.js",
     "scripts": {
@@ -36,6 +36,6 @@
     "dependencies": {
         "axios": "^0.18.1",
         "laravel-echo": "^1.7.0",
-        "pusher-js": "^4.4.0"
+        "pusher-js": "^5.1.0"
     }
 }
