@@ -34,7 +34,7 @@
         "eslint": "^5.16.0"
     },
     "dependencies": {
-        "axios": "^0.18.1",
+        "axios": "^0.21.1",
         "laravel-echo": "^1.7.0",
         "pusher-js": "^5.1.0"
     }
